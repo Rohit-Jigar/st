@@ -1,0 +1,141 @@
+/* Reset & base styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+
+/* Header styles */
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header-text p {
+    margin: 5px 0 0;
+}
+
+
+/* Navbar styles */
+
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+/* Section styles */
+
+section {
+    padding: 40px 0;
+}
+
+.skill-list span {
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar ul li a {
+        padding: 10px;
+    }
+}
+
+.rohit {
+    background: linear-gradient(7deg, #9642f7, #f7b7a3, #6c5ce7, #48c6ef);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+
+/* Define the animation for the gradient */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
